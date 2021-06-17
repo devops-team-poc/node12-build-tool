@@ -1,8 +1,7 @@
 #!/bin/sh
 
 
-#     https://www.apache.org/licenses/LICENS
 set -e
 
 
-sh -c "npm $*"
+sh -c "npx detox test -c android.emu.release.ci --headless"
